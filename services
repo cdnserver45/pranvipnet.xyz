@@ -1,0 +1,4 @@
+#!/bin/bash
+screen -dmS socks python /etc/socks.py 80
+screen -dmS webinfo php -S 0.0.0.0:5623 -t /usr/.web/
+php /etc/status.php &>/dev/null

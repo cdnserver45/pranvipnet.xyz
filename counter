@@ -1,0 +1,9 @@
+#!/bin/bash
+. /etc/openvpn/login/config.sh
+serverip=SERVERIP
+
+tcpusers=$(sed -n -e "/^ROUTING_TABLE/p" /etc/openvpn/server/tcpclient.log | wc -l)
+udpusers=$(sed -n -e "/^ROUTING_TABLE/p" /etc/openvpn/server/udpclient.log | wc -l)
+total=$((tcpusers + udpusers))
+
+mysql -u $USER -p$PASS -D $DB -h $HOST -e "UPDATE server_list SET online='$total' WHERE server_ip='$serverip' "
