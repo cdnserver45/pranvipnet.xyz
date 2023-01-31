@@ -1,3 +1,11 @@
+#!/bin/bash
+#Script Variables
+HOST='66.45.251.234';
+USER='kingofon_pranvipnet';
+PASS='zS)Zn}~]bSF{';
+DBNAME='kingofon_pranvipnet';
+PORT_TCP='1194';
+PORT_UDP='1194';
 
 timedatectl set-timezone Asia/Riyadh
 install_require () {
