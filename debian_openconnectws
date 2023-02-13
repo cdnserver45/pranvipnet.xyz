@@ -1,9 +1,9 @@
 #!/bin/bash
 #Script Variables
-HOST='66.45.251.234';
-USER='kingofon_pranvipnet';
-PASS='zS)Zn}~]bSF{';
-DBNAME='kingofon_pranvipnet';
+HOST='162.250.121.69';
+USER='digitelp_pranvipnet';
+PASS='@@@@Digittel123';
+DBNAME='digitelp_pranvipnet';
 PORT_TCP='1194';
 PORT_UDP='1194';
 
